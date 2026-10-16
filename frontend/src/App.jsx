@@ -233,23 +233,34 @@ function TodoDashboard() {
             />
           </section>
 
-          {/* Error */}
-          {error && (
-            <div
-              role="alert"
-              className="mb-5 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700 dark:border-red-900 dark:bg-red-950/40 dark:text-red-300"
-            >
-              <p>{error}</p>
+         
+{/* Error */}
+{error && (
+  <div
+    role="alert"
+    className="mb-5 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700 dark:border-red-900 dark:bg-red-950/40 dark:text-red-300"
+  >
+    <p>{error}</p>
 
-              <button
-                type="button"
-                onClick={loadTodos}
-                className="mt-2 font-bold underline"
-              >
-                Retry
-              </button>
-            </div>
-          )}
+    <button
+      type="button"
+      onClick={() => {
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+          navigate("/login", { replace: true });
+          return;
+        }
+
+        loadTodos();
+      }}
+      className="mt-2 font-bold underline"
+    >
+      Retry
+    </button>
+  </div>
+)}
+
 
           {/* Create / Edit form */}
           <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-6">
