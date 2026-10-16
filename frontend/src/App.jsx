@@ -196,12 +196,12 @@ function TodoDashboard() {
     <div className="min-h-screen bg-slate-100 text-slate-900 transition-colors dark:bg-slate-950 dark:text-white">
       <Navbar />
 
-      <main className="px-4 pb-8 pt-2 sm:px-6 sm:pb-12 sm:pt-36">
+      <main className="px-4 pb-8 pt-24 sm:px-6 sm:pb-12 sm:pt-36">
         <div className="mx-auto max-w-4xl">
           {/* Header */}
 
           <header className="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left md:text-center">
               <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                 TaskForge
               </h1>
