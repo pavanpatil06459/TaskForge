@@ -23,7 +23,7 @@ const todoSchema = new mongoose.Schema({
     type: Date,
   },
 
-  // Todo kis user ka hai
+  // Todo belongs to a specific user
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
