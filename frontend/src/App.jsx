@@ -11,6 +11,8 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 import {
   getTodos,
@@ -449,6 +451,8 @@ function App() {
 
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<TodoDashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" replace />} />
