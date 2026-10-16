@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "../components/AuthLayout";
 import AnimatedBackground from "../components/AnimatedBackground";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://taskforge-backend-4ju1.onrender.com";
 
 export default function Register() {
   const navigate = useNavigate();

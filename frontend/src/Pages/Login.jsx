@@ -4,7 +4,7 @@ import AuthLayout from "../components/AuthLayout";
 import AnimatedBackground from "../components/AnimatedBackground";
 import { useTheme } from "../context/ThemeContext";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://taskforge-backend-4ju1.onrender.com";
 
 export default function Login() {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3000/contact";
+const API_URL = "https://taskforge-backend-4ju1.onrender.com/contact";
 
 export default function Contact() {
   const [form, setForm] = useState({
