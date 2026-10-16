@@ -1,5 +1,7 @@
-const API_URL = "http://localhost:3000/todo";
-const AUTH_URL = "http://localhost:3000/auth";
+const BASE_URL = "https://taskforge-backend-4ju1.onrender.com";
+
+const API_URL = `${BASE_URL}/todo`;
+const AUTH_URL = `${BASE_URL}/auth`;
 
 // Get the logged-in user's token
 function getAuthHeaders() {
