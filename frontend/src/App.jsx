@@ -404,6 +404,7 @@ function TodoDashboard() {
                     </span>
 
                     <PriorityBadge priority={todo.priority} />
+                    
 
                     <div className="ml-auto flex shrink-0 items-center gap-1 sm:ml-0">
                       <button

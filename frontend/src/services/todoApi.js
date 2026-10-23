@@ -40,7 +40,7 @@ export async function createTodo(title) {
       ...getAuthHeaders(),
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ title }),
+    body: JSON.stringify({ title, priority }),
   });
 
   const data = await response.json();
