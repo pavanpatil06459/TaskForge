@@ -33,7 +33,7 @@ export async function getTodos() {
 }
 
 // POST: Create a Todo
-export async function createTodo(title) {
+export async function createTodo(title, priority) {
   const response = await fetch(API_URL, {
     method: "POST",
     headers: {
